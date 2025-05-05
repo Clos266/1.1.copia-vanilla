@@ -1,34 +1,33 @@
-Bookmark Landing Page (Vanilla Copy)
-Copia en HTML, CSS y JavaScript puro de la siguiente landing page:
-🔗 https://bookmark-agency-page.netlify.app/
+# Bookmark Landing Page (Vanilla Copy)
 
-Tecnologías utilizadas
-HTML5
+Copia en HTML, CSS y JavaScript puro de la siguiente landing page:  
+🔗 [https://bookmark-agency-page.netlify.app/](https://bookmark-agency-page.netlify.app/)
 
-CSS3
+## Tecnologías utilizadas
 
-JavaScript (Vanilla)
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla)
 
-Descripción
+## Descripción
+
 Este proyecto es una réplica fiel de la landing page de Bookmark, desarrollada sin frameworks ni librerías externas. El objetivo es practicar maquetación responsiva, diseño moderno y comportamiento interactivo usando únicamente tecnologías web básicas.
 
-Funcionalidades implementadas
+## Funcionalidades implementadas
 
-Diseño responsivo
+- Diseño responsivo  
+- Menú hamburguesa móvil  
+- Tabs dinámicos  
+- Sección de preguntas frecuentes (FAQ) con acordeones  
+- Footer completo con enlaces e iconos sociales  
 
-Tabs dinámicos
+## Cómo usar
 
-Sección de preguntas frecuentes (FAQ) con acordeones
+1. Clona el repositorio  
+2. Abre el archivo `index.html` en tu navegador  
+3. Explora el sitio y su comportamiento responsivo/interactivo  
 
-Footer completo con enlaces e iconos sociales
+## Autor
 
-Cómo usar
-Clona el repositorio
-
-Abre el archivo index.html en tu navegador
-
-Explora el sitio y su comportamiento responsivo/interactivo
-
-Autor
 Carlos Grau
 
