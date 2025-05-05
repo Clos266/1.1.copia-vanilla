@@ -30,5 +30,5 @@ Abre el archivo index.html en tu navegador
 Explora el sitio y su comportamiento responsivo/interactivo
 
 Autor
-Tu Nombre – [Tu contacto o portafolio si quieres]
+Carlos Grau
 
