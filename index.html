@@ -1,214 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bookmark Vanilla</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Proyecto con Sass</title>
+  <link rel="stylesheet" href="dist/css/main.css">
 </head>
-<body onload="document.querySelector('.tablinks').click()">
-  <div class="container">
-  <header>
-    <nav>
-      <div class="logo-container">
-        <a href="#">
-        <img src="bookmark.png" alt="logo" class="logo-img" /></a>
-        <div class="logo">BOOKMARK</div>
-      </div>
-      <ul>
-        <li><a href="#features">FEATURES</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="login.asp" class="login-button">LOGIN</a></li>
-      </ul>
-    </nav>
-    
-  </header>
-  <div class="decoracion">
-    <div class="barra izquierda"></div>
-    <div class="barra derecha"></div>
-    <div class="franja"></div>
-  </div>
-  <main>
-    <section class="hero">
-      <div class="hero-left">
-        <h1 class="hero-title">A Simple Bookmark Manager</h1>
-        <p class="hero-text">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-        <div class="hero-buttons">
-          <button class="chrome">Get it on Chrome</button>
-          <button>Get it on Firefox</button>
-        </div>
-      </div>
-      <div class="hero-right">
-        <img src="img.svg" alt="pc" />
-      </div>
-    </section>
+<body>
 
-    <section id="features" class="features">
-      <h2>Features</h2>
-      <p>Our aim is to make it quick and easy for you to access your favourite websites.
-      Your bookmarks sync between your devices so you can access them on the go.
-      </p>
-    </section>
-    
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event, 'Simple')">Simple Bookmarking</button>
-      <button class="tablinks" onclick="openTab(event, 'Speddy')">Speddy Searching</button>
-      <button class="tablinks" onclick="openTab(event, 'Easy')">Easy Sharing</button>
-    </div>
-    
-    <div id="Simple" class="tabcontent">
-      <div class="tab-layout">
-        <img class="tab-image" src="assets/img2.svg" alt="Bookmark image" />
-        <div class="tab-text">
-          <h3>Bookmark in one click</h3>
-          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-          <div class="Simple-button">
-            <button>More Info</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="Speddy" class="tabcontent">
-      <div class="tab-layout">
-        <img class="tab-image" src="img3.svg" alt="Search image" />
-        <div class="tab-text">
-          <h3>Intelligent search</h3>
-          <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-          <div class="Simple-button">
-            <button>More Info</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div id="Easy" class="tabcontent">
-      <div class="tab-layout">
-        <img class="tab-image" src="img4.svg" alt="Sharing image" />
-        <div class="tab-text">
-          <h3>Share your bookmarks</h3>
-          <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-          <div class="Simple-button">
-            <button>More Info</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section id="download" class="download">
-      <h2>Download the extension</h2>
-      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.
-      </p>
-    </section>
-    <section id="navegadores" class="navegadores">
-    <div id="chrome" class="box">
-      <img src="chrome.svg" alt="chrome" />
-      <h3>Add to chrome</h3>
-      <h4>Minimum version 62</h4>
-      <div class="linea-punteada"></div>
-      <div class="Simple-button">
-        <button>Add & Install Extension</button>
-      </div>
-    </div>
-    <div id="firefox" class="box">
-      <img src="firefox.svg" alt="firefox" />
-      <h3>Add to firefox</h3>
-      <h4>Minimum version 55</h4>
-      <div class="linea-punteada"></div>
-      <div class="Simple-button">
-        <button>Add & Install Extension</button>
-      </div>
-    </div>
-    <div id="opera" class="box">
-      <img src="opera.svg" alt="opera" />
-      <h3>Add to opera</h3>
-      <h4>Minimum version 646</h4>
-      <div class="linea-punteada"></div>
-      <div class="Simple-button">
-        <button>Add & Install Extension</button>
-      </div>
-    </div>
-  </section>
-  <section id="faq" class="faq">
-    <h6>Frequently Asked Questions</h6>
-    <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-    <ul>
-      <li>
-        <div class="faq-question">
-          <span>What is Bookmark?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">Bookmark is a powerful browser extension that helps you manage your favorite sites easily.</p>
-      </li>
-      <li>
-        <div class="faq-question">
-          <span>How can I request a new browser?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">You can contact us directly through our support email to suggest new browsers.</p>
-      </li>
-      <li>
-        <div class="faq-question">
-          <span>Is there a mobile app?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">We’re working on a mobile version — stay tuned for updates!</p>
-      </li>
-      <li>
-        <div class="faq-question">
-          <span>What about other Chromium browsers?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">Yes, it works on most Chromium-based browsers such as Brave or Edge.</p>
-      </li>
-    </ul>
-    <div class="Simple-button">
-      <button>More Info</button>
-    </div>
-  </section>
-</div>
-
-  <!-- SEGUNDO FOOTER (NEWSLETTER) -->
-  <section id="contact" class="newsletter-footer">
-    <p class="subtext">35,000+ ALREADY JOINED</p>
-    <h1 class="title">Stay up-to-date with what we´re doing</h1>
-    <div class="input-container">
-      <input type="text" class="email-input" placeholder="Enter your email address">
-      <button class="contact-button">Contact Us</button>
-    </div>
-  </section>
-  <!-- FOOTER solo abajo -->
-  <div id="bottom-marker"></div>
-<!-- FOOTER PRINCIPAL -->
-<footer class="footer">
-  <div class="footer-left">
-    <div class="footer-logo-container">
-      <a href="#">
-        <img src="bookmark.png" alt="logo" class="footer-logo-img" />
-      </a>
-      <div class="footer-logo">BOOKMARK</div>
-    </div>
-  </div>
-
-  <div class="footer-center">
-    <ul class="footer-links">
-      <li><a href="#features">FEATURES</a></li>
+  <nav class="navbar">
+    <div class="navbar__logo">Bookmark</div>
+  
+    <button class="navbar__toggle" aria-label="Abrir menú">
+      <span class="navbar__icon"></span>
+      <span class="navbar__icon"></span>
+      <span class="navbar__icon"></span>
+    </button>
+  
+    <ul class="navbar__links">
+      <li><a href="#">FEATURES</a></li>
       <li><a href="#">PRICING</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li class="button button--secondary"><a href="#">LOGIN</a></li>
     </ul>
-  </div>
+  </nav>
+  <main class="main-content">
 
-  <div class="footer-right">
-    <div class="social-icons">
-      <a href="#" class="social-icon"><img src="fb.svg" alt="Facebook"></a>
-      <a href="#" class="social-icon"><img src="tw.svg" alt="Twitter"></a>
-    </div>
-  </div>
-</footer>
+    <section class="section section--hero">
+      <h1>A Simple Bookmark Manager</h1>
+      <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+      <div class="button">Get it on Chrome</div>
+      <div class="button button--secondary">Get it on Firefox</div>
+    </section>
 
-</div> <!-- Fin del div.container -->
-  </section>
-</div>
-  <script src="script.js"></script>
+    <section class="section section--features">
+      <h2>Features</h2>
+      <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+    </section>
+
+    <section class="section section--pricing">
+      <h2>Download the extension</h2>
+      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+    </section>
+
+    <section class="section section--contact">
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Mi Proyecto con Sass. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <script>
+    const toggle = document.querySelector('.navbar__toggle');
+    const links = document.querySelector('.navbar__links');
+  
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

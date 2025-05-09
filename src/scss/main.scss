@@ -1,0 +1,51 @@
+@use 'sass:color';
+@use 'variables' as *;
+
+// Estilos globales
+body {
+  font-family: sans-serif;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: $background-color;
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+
+}
+}
+
+
+
+
+h1 {
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
+// Ejemplo de anidación Sass
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: color.adjust($primary-color, $lightness: -10%);
+  }
+  
+  &--secondary {
+    background-color: $secondary-color;
+    
+    &:hover {
+      background-color: color.adjust($secondary-color, $lightness: -10%);
+    }
+  }
+}
