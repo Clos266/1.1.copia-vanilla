@@ -24,6 +24,7 @@
       <li class="button button--secondary"><a href="#">LOGIN</a></li>
     </ul>
   </nav>
+
   <main class="main-content">
 
     <section class="section--hero">
@@ -38,6 +39,48 @@
       <h2>Features</h2>
       <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
     </section>
+    
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Simple')" id="defaultOpen">Simple Bookmarking</button>
+      <button class="tablinks" onclick="openTab(event, 'Speddy')">Speddy Searching</button>
+      <button class="tablinks" onclick="openTab(event, 'Easy')">Easy Sharing</button>
+    </div>
+    
+    <!-- Simple Bookmarking Tab -->
+    <div id="Simple" class="tabcontent" style="display: block;">
+      <div class="tab-layout">
+        <img class="img" src="https://bookmark-agency-page.netlify.app/static/media/illustration-features-tab-1.0da3d302.svg" alt="Bookmark image" />
+        <div class="tab-text">
+          <h3>Bookmark in one click</h3>
+          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <button class="button">More Info</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Speddy Searching Tab -->
+    <div id="Speddy" class="tabcontent">
+      <div class="tab-layout">
+        <img class="img" src="https://bookmark-agency-page.netlify.app/static/media/illustration-features-tab-2.e933bd6d.svg" alt="Search image" />
+        <div class="tab-text">
+          <h3>Intelligent search</h3>
+          <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+          <button class="button">More Info</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Easy Sharing Tab -->
+    <div id="Easy" class="tabcontent">
+      <div class="tab-layout">
+        <img class="img" src="https://bookmark-agency-page.netlify.app/static/media/illustration-features-tab-3.a4206aab.svg" alt="Sharing image" />
+        <div class="tab-text">
+          <h3>Share your bookmarks</h3>
+          <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+          <button class="button">More Info</button>
+        </div>
+      </div>
+    </div>
 
     <section class="section--downloads">
       <h2>Download the extension</h2>
@@ -55,14 +98,25 @@
     <p>&copy; 2025 Mi Proyecto con Sass. Todos los derechos reservados.</p>
   </footer>
 
-
   <script>
-    const toggle = document.querySelector('.navbar__toggle');
-    const links = document.querySelector('.navbar__links');
-  
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('active');
-    });
+    function openTab(evt, tabName) {
+      const tabcontent = document.querySelectorAll('.tabcontent');
+      tabcontent.forEach(content => {
+        content.style.display = 'none';
+      });
+
+      const tablinks = document.querySelectorAll('.tablinks');
+      tablinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      document.getElementById(tabName).style.display = 'block';
+      evt.currentTarget.classList.add('active');
+    }
+
+    // Display the "Simple" tab by default
+    document.getElementById("defaultOpen").click();
   </script>
+
 </body>
 </html>
