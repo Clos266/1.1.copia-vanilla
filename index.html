@@ -116,44 +116,62 @@
       </div>
     </div>
   </section>
-<!--faq-->
 <section id="section--faq" class="faq">
-    <h1>Frequently Asked Questions</h1>
-    <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
-    <ul>
-      <li>
-        <div class="faq-question">
-          <span>What is Bookmark?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">Bookmark is a powerful browser extension that helps you manage your favorite sites easily.</p>
-      </li>
-      <li>
-        <div class="faq-question">
-          <span>How can I request a new browser?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">You can contact us directly through our support email to suggest new browsers.</p>
-      </li>
-      <li>
-        <div class="faq-question">
-          <span>Is there a mobile app?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">We’re working on a mobile version — stay tuned for updates!</p>
-      </li>
-      <li>
-        <div class="faq-question">
-          <span>What about other Chromium browsers?</span>
-          <button class="toggle-faq">+</button>
-        </div>
-        <p class="faq-answer">Yes, it works on most Chromium-based browsers such as Brave or Edge.</p>
-      </li>
-    </ul>
-    <div class="Simple-button">
-      <button>More Info</button>
-    </div>
-  </section>
+  <h1>Frequently Asked Questions</h1>
+  <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+  <ul>
+    <li>
+      <div class="faq-question">
+        <span>What is Bookmark?</span>
+        <button class="toggle-faq" aria-label="Toggle answer">
+          <svg class="icon-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="faq-answer">Bookmark is a powerful browser extension that helps you manage your favorite sites easily.</p>
+    </li>
+    <li>
+      <div class="faq-question">
+        <span>How can I request a new browser?</span>
+        <button class="toggle-faq" aria-label="Toggle answer">
+          <svg class="icon-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="faq-answer">You can contact us directly through our support email to suggest new browsers.</p>
+    </li>
+    <li>
+      <div class="faq-question">
+        <span>Is there a mobile app?</span>
+        <button class="toggle-faq" aria-label="Toggle answer">
+          <svg class="icon-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="faq-answer">We’re working on a mobile version — stay tuned for updates!</p>
+    </li>
+    <li>
+      <div class="faq-question">
+        <span>What about other Chromium browsers?</span>
+        <button class="toggle-faq" aria-label="Toggle answer">
+          <svg class="icon-chevron" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <p class="faq-answer">Yes, it works on most Chromium-based browsers such as Brave or Edge.</p>
+    </li>
+  </ul>
+  <div class="Simple-button">
+    <button>More Info</button>
+  </div>
+</section>
+
+
+
   <!--  <section class="section--faq">
       <h2>Frequently Asked Questions</h2>
       <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
@@ -161,29 +179,19 @@
 
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Mi Proyecto con Sass. Todos los derechos reservados.</p>
-  </footer>
+ <footer class="footer">
+  <p>35,000+ already joined</p>
+  <h1>Stay up-to-date with what we’re doing</h1>
+  <form class="contact-form" onsubmit="event.preventDefault()">
+    <input type="email" placeholder="Enter your email address" required><br>
+    <button class="button--secondary" type="submit">Contact Us</button>
+  </form>
+  <div class="footer2">
 
-  <script>
-    function openTab(evt, tabName) {
-      const tabcontent = document.querySelectorAll('.tabcontent');
-      tabcontent.forEach(content => {
-        content.style.display = 'none';
-      });
-
-      const tablinks = document.querySelectorAll('.tablinks');
-      tablinks.forEach(link => {
-        link.classList.remove('active');
-      });
-
-      document.getElementById(tabName).style.display = 'block';
-      evt.currentTarget.classList.add('active');
-    }
-
-    // Display the "Simple" tab by default
-    document.getElementById("defaultOpen").click();
-  </script>
+  </div>
+</footer>
+<div id="bottom-marker" style="height: 4rem; position: relative; overflow: hidden;"></div>
+  <script src="script.js"></script>
 
 </body>
 </html>
