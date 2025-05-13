@@ -41,9 +41,9 @@ bash
 Copia
 Modifica
 git clone https://github.com/Clos266/1.1.copia-vanilla.git
+
 Abre el archivo index.html en tu navegador
 
-Explora el sitio y prueba su comportamiento responsivo e interactivo
 
 👨‍💻 Autor
 Carlos Grau
